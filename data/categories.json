@@ -1,0 +1,74 @@
+[
+  {
+    "_id": "67f89a79c4c23ab8108a4c01",
+    "name": "Fresh Fruit",
+    "thumbnailUrl": "/assets/categories/fresh-fruits.png",
+    "productCount": 134
+  },
+  {
+    "_id": "67f89a79c4c23ab8108a4c02",
+    "name": "Fresh Vegetables",
+    "thumbnailUrl": "/assets/categories/fresh-vegetables.png",
+    "productCount": 150
+  },
+  {
+    "_id": "67f89a79c4c23ab8108a4c03",
+    "name": "Meat & Fish",
+    "thumbnailUrl": "/assets/categories/meat-n-fish.png",
+    "productCount": 50
+  },
+  {
+    "_id": "67f89a79c4c23ab8108a4c04",
+    "name": "Snacks",
+    "thumbnailUrl": "/assets/categories/snacks.png",
+    "productCount": 47
+  },
+  {
+    "_id": "67f89a79c4c23ab8108a4c05",
+    "name": "Beverages",
+    "thumbnailUrl": "/assets/categories/beverages.png",
+    "productCount": 43
+  },
+  {
+    "_id": "67f89a79c4c23ab8108a4c06",
+    "name": "Beauty & Health",
+    "thumbnailUrl": "/assets/categories/beauty-n-health.png",
+    "productCount": 38
+  },
+  {
+    "_id": "67f89a79c4c23ab8108a4c06",
+    "name": "Bread & Bakery",
+    "thumbnailUrl": "/assets/categories/bread-n-bakery.png",
+    "productCount": 38
+  },
+  {
+    "_id": "67f89a79c4c23ab8108a4c06",
+    "name": "Baking Needs",
+    "thumbnailUrl": "/assets/categories/baking-needs.png",
+    "productCount": 38
+  },
+  {
+    "_id": "67f89a79c4c23ab8108a4c06",
+    "name": "Cooking",
+    "thumbnailUrl": "/assets/categories/cooking.png",
+    "productCount": 38
+  },
+  {
+    "_id": "67f89a79c4c23ab8108a4c07",
+    "name": "Diabetic Foods",
+    "thumbnailUrl": "/assets/categories/diabetic-foods.png",
+    "productCount": 30
+  },
+  {
+    "_id": "67f89a79c4c23ab8108a4c08",
+    "name": "Dish Detergents",
+    "thumbnailUrl": "/assets/categories/dish-detergents.png",
+    "productCount": 25
+  },
+  {
+    "_id": "67f89a79c4c23ab8108a4c09",
+    "name": "Oil",
+    "thumbnailUrl": "/assets/categories/oil.png",
+    "productCount": 45
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "_id": "67f89a79c4c23ab8108a4f01",
+    "name": "Chinese Cabbage",
+    "sku": "2,51,594",
+    "description": "Fresh and crunchy Chinese cabbage, perfect for salads and stir-fries.",
+    "images": [
+      "/assets/products/product-2.png",
+      "/assets/products/cabbage-2.png",
+      "/assets/products/cabbage-3.png",
+      "/assets/products/cabbage-4.png"
+    ],
+    "price": 48.0,
+    "salePrice": 17.28,
+    "stockStatus": "In Stock",
+    "stockQuantity": 13,
+    "rating": 4.0,
+    "reviewCount": 4,
+    "brand": "farmary",
+    "categoryId": "67f89a79c4c23ab8108a4c02",
+    "tags": [
+      "67f89a79c4c23ab8108a4d01",
+      "67f89a79c4c23ab8108a4d02",
+      "67f89a79c4c23ab8108a4d03"
+    ],
+    "additionalInfo": {
+      "weight": "0.5kg",
+      "color": "Green",
+      "type": "Organic"
+    },
+    "featuredAs": [
+      "Best Seller"
+    ]
+  },
+  {
+    "_id": "67f89a79c4c23ab8108a4f02",
+    "name": "Green Apple",
+    "sku": "SKU-98214",
+    "description": "A crisp and healthy organic green apple.",
+    "images": [
+      "/assets/products/product-1.png",
+      "/assets/products/apple.png"
+    ],
+    "price": 20.99,
+    "salePrice": 14.99,
+    "stockStatus": "In Stock",
+    "stockQuantity": 50,
+    "rating": 5.0,
+    "reviewCount": 12,
+    "brand": "farmary",
+    "categoryId": "67f89a79c4c23ab8108a4c01",
+    "tags": [
+      "67f89a79c4c23ab8108a4d01",
+      "67f89a79c4c23ab8108a4d04"
+    ],
+    "additionalInfo": {
+      "weight": "1kg",
+      "color": "Green",
+      "type": "Organic"
+    },
+    "featuredAs": [
+      "Hot Deal",
+      "Top Rated"
+    ]
+  },
+  {
+    "_id": "67f89a79c4c23ab8108a4f03",
+    "name": "Green Capsicum",
+    "sku": "SKU-33411",
+    "description": "Fresh, crunchy green capsicum.",
+    "images": [
+      "/assets/products/product-8.png",
+      "/assets/products/product-15.png"
+    ],
+    "price": 20.99,
+    "salePrice": 14.99,
+    "stockStatus": "In Stock",
+    "stockQuantity": 20,
+    "rating": 5.0,
+    "reviewCount": 8,
+    "brand": "farmary",
+    "categoryId": "67f89a79c4c23ab8108a4c02",
+    "tags": [
+      "67f89a79c4c23ab8108a4d01",
+      "67f89a79c4c23ab8108a4d03"
+    ],
+    "additionalInfo": {
+      "weight": "0.4kg",
+      "color": "Green",
+      "type": "Organic"
+    },
+    "featuredAs": []
+  }
+]

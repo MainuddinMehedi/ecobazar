@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import "./globals.css";
+import Navbar from "../components/Navbar";
 
 // const geistSans = ({
 //   variable: "--font-geist-sans",
@@ -22,6 +23,7 @@ export default function RootLayout({
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className=""
       >
+        <Navbar />
         {children}
       </body>
     </html>

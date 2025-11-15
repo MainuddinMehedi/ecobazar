@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "67f89a79c4c23ab8108a9e01",
+    "blogId": "67f89a79c4c23ab8108a8d01",
+    "authorName": "Annette Black",
+    "content": "This blog post provides excellent insights into sustainable shopping practices. I particularly appreciate the tips on reducing plastic waste and supporting local farmers.",
+    "createdAt": "2021-04-26T00:00:00Z",
+    "isApproved": true
+  },
+  {
+    "_id": "67f89a79c4c23ab8108a9e02",
+    "blogId": "67f89a79c4c23ab8108a8d01",
+    "authorName": "Devon Lane",
+    "content": "I've been following these eco-friendly recommendations for a month now and have already noticed a positive impact on both my budget and the environment. Thank you for sharing this valuable information!",
+    "createdAt": "2021-04-24T00:00:00Z",
+    "isApproved": true
+  }
+]

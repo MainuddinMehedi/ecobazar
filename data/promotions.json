@@ -1,0 +1,31 @@
+[
+  {
+    "_id": "67f89a79c4c23ab8108aaF01",
+    "title": "SUMMER SALE",
+    "subtitle": "75% OFF",
+    "imageUrl": "/assets/offer-promo-pics/offer-promo-1.png",
+    "linkTo": "/shop?promo=summer75",
+    "type": "banner",
+    "offerEnds": "2025-11-30T23:59:59Z",
+    "priority": 1
+  },
+  {
+    "_id": "67f89a79c4c23ab8108aaF02",
+    "title": "Sale of the Month",
+    "imageUrl": "/assets/offer-promo-pics/offer-promo-2.png",
+    "linkTo": "/shop?promo=sale-of-month",
+    "type": "card",
+    "offerEnds": "2025-11-30T23:59:59Z",
+    "priority": 2
+  },
+  {
+    "_id": "67f89a79c4c23ab8108aaF03",
+    "title": "Low-Fat Meat",
+    "subtitle": "Started at $79.99",
+    "imageUrl": "/assets/offer-promo-pics/offer-promo.png",
+    "linkTo": "/categories/meat-fish?filter=low-fat",
+    "type": "card",
+    "offerEnds": "2025-11-30T23:59:59Z",
+    "priority": 3
+  }
+]
