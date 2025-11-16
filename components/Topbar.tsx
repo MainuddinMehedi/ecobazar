@@ -11,7 +11,7 @@ export default function Topbar() {
         </span>
       </div>
       <div className="flex gap-5">
-        <div className="space-x-2">
+        <div className="space-x-3">
           <select name="language" id="language">
             <option value="usa">Eng</option>
             <option value="canada">Bn</option>
@@ -21,6 +21,7 @@ export default function Topbar() {
             <option value="tk">TK</option>
           </select>
         </div>
+        <span className="border-r border-r-gray-50" />
         <div className="space-x-2">
           <Link href="/signin">Sign In</Link>
           <span>/</span>
