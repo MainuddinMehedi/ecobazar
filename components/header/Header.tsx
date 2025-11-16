@@ -54,10 +54,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Navigation Bar */}
-      <div>
-        <Navbar />
-      </div>
+      <Navbar />
     </div>
   );
 }
