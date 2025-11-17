@@ -6,7 +6,7 @@
 @theme {
   --font-poppins: "Poppins", sans-serif;
 
-  --color-primary: #00b207; /* success primary */
+  --color-success: #00b207; /* success primary */
   --color-soft-primary: #84d187;
   --color-hard-primary: #2c742f; /* success dark */
   --color-warning: #ff8a00;
@@ -156,14 +156,17 @@
   }
 }
 
-.btn-normal {
+/* .btn-normal {
   @apply bg-primary text-primary-foreground hover:bg-hard-primary;
-}
+} */
 
 @layer components {
   .badge-mini {
     /* small badge for product cards (e.g. "Best Sale") */
     @apply inline-flex items-center justify-center text-white text-xs font-semibold px-2 py-0.5 rounded;
     background: var(--color-info-blue);
+  }
+  .btn-normal {
+    @apply bg-success text-white rounded-[43px] py-4 px-8;
   }
 }
