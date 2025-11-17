@@ -41,7 +41,7 @@ export default function HeroSection() {
   return (
     <div className="mt-5">
       <Carousel className="w-full rounded-lg bg-gray-50">
-        <CarouselContent className="w-full h-[650px] -ml-2">
+        <CarouselContent className="w-full h-[750px] -ml-2">
           {data.map((item, index) => (
             <CarouselItem key={index} className="flex items-center pl-2">
               <div className="flex h-full">
