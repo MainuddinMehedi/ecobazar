@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     // <div className="h-[60px] bg-gray-800 text-white flex justify-between">
     <div className="relative left-1/2 -translate-x-1/2 w-screen h-[60px] bg-gray-800 text-white  font-medium flex justify-between">
-      <div className="w-[90%] mx-auto flex items-center justify-between h-full">
+      <div className="w-[89%] mx-auto flex items-center justify-between h-full">
         <div className="h-full flex gap-10">
           <CategoryDropdown />
 

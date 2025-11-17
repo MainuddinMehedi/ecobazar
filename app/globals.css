@@ -152,13 +152,13 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground m-0 p-0;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
   }
 }
-
-/* .btn-normal {
-  @apply bg-primary text-primary-foreground hover:bg-hard-primary;
-} */
 
 @layer components {
   .badge-mini {
@@ -166,6 +166,7 @@
     @apply inline-flex items-center justify-center text-white text-xs font-semibold px-2 py-0.5 rounded;
     background: var(--color-info-blue);
   }
+
   .btn-normal {
     @apply bg-success text-white rounded-[43px] py-4 px-8;
   }
