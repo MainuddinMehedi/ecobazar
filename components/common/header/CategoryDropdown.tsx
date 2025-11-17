@@ -1,26 +1,26 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import {
-    Apple,
-    Cake,
-    Carrot,
-    ChevronDown,
-    Coffee,
-    Drumstick,
-    Fish,
-    IceCream,
-    Menu,
-    Milk,
-    UtensilsCrossed,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import {
+  Apple,
+  Cake,
+  Carrot,
+  ChevronDown,
+  Coffee,
+  Drumstick,
+  Fish,
+  IceCream,
+  Menu,
+  Milk,
+  UtensilsCrossed,
 } from "lucide-react";
 import React from "react";
-import { Button } from "../ui/button";
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
 
 const categories = [
   { icon: Apple, label: "Fresh Fruit" },

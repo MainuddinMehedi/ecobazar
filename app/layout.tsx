@@ -1,4 +1,4 @@
-import Header from "@/components/header/Header";
+import Header from "@/components/common/header/Header";
 import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
