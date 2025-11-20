@@ -1,3 +1,4 @@
+import Footer from "@/components/common/footer/Footer";
 import Header from "@/components/common/header/Header";
 import { cn } from "@/lib/utils";
 import { Metadata } from "next";
@@ -24,16 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${cn(
-          poppins.className,
-          inter.className
-        )} antialiased flex justify-center`}
-      >
-        <div className="w-[90%]">
-          <Header />
-          {children}
+      <body className={`${cn(poppins.className, inter.className)} antialiased`}>
+        <Header />
+        <div className="flex justify-center">
+          <div className="w-[90%]">{children}</div>
         </div>
+        <Footer />
       </body>
     </html>
   );
