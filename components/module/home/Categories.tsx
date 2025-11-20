@@ -16,10 +16,8 @@ export default async function Categories() {
   return (
     <div className="text-center">
       <p className="text-success text-sm font-medium mb-3">CATEGORY</p>
-      <h1 className="text-4xl font-semibold text-gray-900 mb-8">
-        Shop By Categories
-      </h1>
-      <div className="flex justify-between gap-y-8 flex-wrap">
+      <h1 className="heading-primary mb-10">Shop By Categories</h1>
+      <div className="flex gap-7 flex-wrap">
         {categories.map((category: Category) => (
           <div
             key={category._id}

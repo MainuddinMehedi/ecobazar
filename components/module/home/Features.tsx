@@ -2,7 +2,7 @@ import { Handbag, Headset, Package, TruckElectric } from "lucide-react";
 
 export default function Features() {
   return (
-    <div className="w-full flex justify-center relative -top-22">
+    <div className="w-full flex justify-center relative -top-20 -mt-10 mb-4">
       <div className="w-[85%] flex justify-between items-center gap-6 px-16 py-10 rounded-xl shadow-xl bg-white">
         {/* one */}
         <div className="flex gap-4">

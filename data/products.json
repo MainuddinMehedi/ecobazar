@@ -12,12 +12,11 @@
     ],
     "price": 48.0,
     "salePrice": 17.28,
-    "stockStatus": "In Stock",
-    "stockQuantity": 13,
+    "stock": 13,
     "rating": 4.0,
-    "reviewCount": 4,
     "brand": "farmary",
     "categoryId": "67f89a79c4c23ab8108a4c02",
+    "isFeatured": true,
     "tags": [
       "67f89a79c4c23ab8108a4d01",
       "67f89a79c4c23ab8108a4d02",
@@ -28,7 +27,7 @@
       "color": "Green",
       "type": "Organic"
     },
-    "featuredAs": [
+    "featuredAds": [
       "Best Seller"
     ]
   },
@@ -43,12 +42,12 @@
     ],
     "price": 20.99,
     "salePrice": 14.99,
-    "stockStatus": "In Stock",
-    "stockQuantity": 50,
+    "stock": 50,
     "rating": 5.0,
     "reviewCount": 12,
     "brand": "farmary",
     "categoryId": "67f89a79c4c23ab8108a4c01",
+    "isFeatured": false,
     "tags": [
       "67f89a79c4c23ab8108a4d01",
       "67f89a79c4c23ab8108a4d04"
@@ -74,12 +73,12 @@
     ],
     "price": 20.99,
     "salePrice": 14.99,
-    "stockStatus": "In Stock",
-    "stockQuantity": 20,
+    "stock": 20,
     "rating": 5.0,
     "reviewCount": 8,
     "brand": "farmary",
     "categoryId": "67f89a79c4c23ab8108a4c02",
+    "isFeatured": true,
     "tags": [
       "67f89a79c4c23ab8108a4d01",
       "67f89a79c4c23ab8108a4d03"

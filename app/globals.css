@@ -170,4 +170,8 @@
   .btn-normal {
     @apply bg-success text-white rounded-[43px] py-4 px-8;
   }
+
+  .heading-primary {
+    @apply text-[40px] font-semibold text-gray-900 mb-8;
+  }
 }
