@@ -4,7 +4,7 @@ import PaymentBadge from "./PaymentBadge";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#1A1A1A] pt-[60px] pb-8 text-gray-300 font-sans">
+    <footer className="w-full bg-[#1A1A1A] pt-[60px] pb-8 text-gray-300 font-sans mt-5">
       <div className="container mx-auto px-4 xl:px-0 w-[90%]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-[5px] mb-16">
           {/* Column 1: Brand Info */}
