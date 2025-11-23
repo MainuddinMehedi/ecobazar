@@ -5,13 +5,10 @@ import PaymentBadge from "./PaymentBadge";
 export default function Footer() {
   return (
     <footer className="w-full bg-[#1A1A1A] pt-[60px] pb-8 text-gray-300 font-sans">
-      {/* Main Container - Max width set to match the 300px padding on 1920px screen */}
       <div className="container mx-auto px-4 xl:px-0 w-[90%]">
-        {/* Top Section: Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-[60px] mb-16">
-          {/* Column 1: Brand Info (Wider column) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-[5px] mb-16">
+          {/* Column 1: Brand Info */}
           <div className="lg:col-span-4 flex flex-col gap-4">
-            {/* Logo */}
             <Image
               src={"/assets/Logo.svg"}
               alt="Logo"
@@ -97,8 +94,29 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Column 5: Modile apps */}
+          <div className="space-y-5">
+            <h1 className="text-xl font-medium text-nowrap">
+              Download our Mobile App
+            </h1>
+            <div className="flex gap-3">
+              <Image
+                src={"/assets/footer-images/App Store.png"}
+                alt="App Store"
+                width={154}
+                height={58}
+              />
+              <Image
+                src={"/assets/footer-images/Google Play.png"}
+                alt="Google Play"
+                width={154}
+                height={58}
+              />
+            </div>
+          </div>
+
           {/* Column 5: Categories */}
-          <div className="lg:col-span-2">
+          {/* <div className="lg:col-span-2">
             <h3 className="text-white text-lg font-medium mb-5">Categories</h3>
             <ul className="flex flex-col gap-3 text-sm">
               {[
@@ -114,7 +132,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
 
         {/* Bottom Section: Copyright & Payment */}
@@ -123,7 +141,7 @@ export default function Footer() {
             Ecobazar eCommerce © 2021. All Rights Reserved
           </p>
 
-          {/* Payment Icons Placeholder */}
+          {/* Payment Icons */}
           <div className="flex items-center gap-4">
             <PaymentBadge imageUrl="/assets/footer-images/Method=ApplePay.png" />
             <PaymentBadge imageUrl="/assets/footer-images/Method=Visa.png" />
@@ -136,54 +154,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-// import Image from "next/image";
-
-// export default function Footer() {
-//   return (
-//     <div>
-//       <div>
-//         <div></div>
-//         <div></div>
-//         <div></div>
-//         <div></div>
-//         <div></div>
-//       </div>
-//       <div>
-//         <p>Ecobazar eCommerce © 2021. All Rights Reserved</p>
-//         <div>
-//           <Image
-//             src={"/assets/footer-images/Method=ApplePay.png"}
-//             alt="Apple pay"
-//             width={45}
-//             height={31}
-//           />
-//           <Image
-//             src={"/assets/footer-images/Method=Visa.png"}
-//             alt="Visa"
-//             width={45}
-//             height={31}
-//           />
-//           <Image
-//             src={"/assets/footer-images/Method=Discover.png"}
-//             alt="Discover"
-//             width={45}
-//             height={31}
-//           />
-//           <Image
-//             src={"/assets/footer-images/Method=Mastercard.png"}
-//             alt="Master card"
-//             width={45}
-//             height={31}
-//           />
-//           <Image
-//             src={"/assets/footer-images/Method=secure-payment.png"}
-//             alt="Secure Payment"
-//             width={45}
-//             height={31}
-//           />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
