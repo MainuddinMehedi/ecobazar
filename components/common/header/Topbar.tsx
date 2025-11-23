@@ -3,29 +3,31 @@ import Link from "next/link";
 
 export default function Topbar() {
   return (
-    <div className="flex justify-between items-center py-3 text-gray-600 text-sm border-b border-b-gray-50">
-      <div>
-        <span className="flex items-center gap-1">
-          <MapPin className="h-6" />
-          Store Location: Lincoln- 344, Illinois, Chicago, USA
-        </span>
-      </div>
-      <div className="flex gap-5">
-        <div className="space-x-3">
-          <select name="language" id="language">
-            <option value="usa">Eng</option>
-            <option value="canada">Bn</option>
-          </select>
-          <select name="currency" id="currency">
-            <option value="usd">USD</option>
-            <option value="tk">TK</option>
-          </select>
+    <div className="flex justify-center">
+      <div className="w-[90%] flex justify-between items-center py-3 text-gray-600 text-sm border-b border-b-gray-50">
+        <div>
+          <span className="flex items-center gap-1">
+            <MapPin className="h-6" />
+            Store Location: Lincoln- 344, Illinois, Chicago, USA
+          </span>
         </div>
-        <span className="border-r border-r-gray-50" />
-        <div className="space-x-2">
-          <Link href="/signin">Sign In</Link>
-          <span>/</span>
-          <Link href="/signup">Sign Up</Link>
+        <div className="flex gap-5">
+          <div className="space-x-3">
+            <select name="language" id="language">
+              <option value="usa">Eng</option>
+              <option value="canada">Bn</option>
+            </select>
+            <select name="currency" id="currency">
+              <option value="usd">USD</option>
+              <option value="tk">TK</option>
+            </select>
+          </div>
+          <span className="border-r border-r-gray-50" />
+          <div className="space-x-2">
+            <Link href="/signin">Sign In</Link>
+            <span>/</span>
+            <Link href="/signup">Sign Up</Link>
+          </div>
         </div>
       </div>
     </div>

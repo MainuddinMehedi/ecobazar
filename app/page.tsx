@@ -10,8 +10,7 @@ export default function Home() {
       <Features />
       <Categories />
       <FeaturedProducts />
-      
-      <h1 className="text-5xl">abgnlajsdlkajlsdjflasjdfl</h1>
+
     </div>
   );
 }
