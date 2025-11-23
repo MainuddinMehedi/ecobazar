@@ -2,6 +2,7 @@ import Categories from "@/components/module/home/Categories";
 import FeaturedProducts from "@/components/module/home/FeaturedProducts";
 import Features from "@/components/module/home/Features";
 import HeroSection from "@/components/module/home/hero/HeroSection";
+import NewestProducts from "@/components/module/home/NewestProducts";
 import Promotions from "@/components/module/home/Promotions";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Categories />
       <FeaturedProducts />
       <Promotions />
+      <NewestProducts />
     </div>
   );
 }
