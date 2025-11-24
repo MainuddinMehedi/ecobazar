@@ -1,6 +1,6 @@
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
-export default function Subscribe() {
+export default function Newsletter() {
   return (
     <div className="flex justify-center items-center h-[162]">
       <div className="w-[89%] flex justify-between items-center">

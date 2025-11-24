@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
-import Subscribe from "@/components/common/Subscribe";
+import Newsletter from "@/components/common/Newsletter";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -31,7 +31,7 @@ export default function RootLayout({
         <div className="flex justify-center">
           <div className="w-[90%]">{children}</div>
         </div>
-        <Subscribe />
+        <Newsletter />
         <Footer />
       </body>
     </html>
