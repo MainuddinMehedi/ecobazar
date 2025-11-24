@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "67f89a79c4c23ab8108acB01",
+    "name": "Jenny Wilson",
+    "designation": "Farmer",
+    "imageUrl": "/images/team/jenny-wilson.png"
+  },
+  {
+    "_id": "67f89a79c4c23ab8108acB02",
+    "name": "Jane Cooper",
+    "designation": "Farmer",
+    "imageUrl": "/images/team/jane-cooper.png"
+  },
+  {
+    "_id": "67f89a79c4c23ab8108acB03",
+    "name": "Cody Fisher",
+    "designation": "Manager",
+    "imageUrl": "/images/team/cody-fisher.png"
+  }
+]

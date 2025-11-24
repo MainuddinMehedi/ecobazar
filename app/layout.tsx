@@ -1,10 +1,18 @@
+import Footer from "@/components/common/footer/Footer";
+import Header from "@/components/common/header/Header";
+import { cn } from "@/lib/utils";
 import { Metadata } from "next";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
+import Subscribe from "@/components/common/Subscribe";
 
-// const geistSans = ({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
+const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata: Metadata = {
   title: "Ecobazar",
@@ -18,11 +26,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className=""
-      >
-        {children}
+      <body className={`${cn(poppins.className, inter.className)} antialiased`}>
+        <Header />
+        <div className="flex justify-center">
+          <div className="w-[90%]">{children}</div>
+        </div>
+        <Subscribe />
+        <Footer />
       </body>
     </html>
   );

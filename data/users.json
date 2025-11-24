@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "67f89a79c4c23ab8108a4e01",
+    "firstName": "Dennis",
+    "lastName": "Nzioki",
+    "email": "dennisnzioki@gmail.com",
+    "phone": "254 555-0123",
+    "passwordHash": "$2a$10$NotARealHash...abc123xyz789",
+    "profilePictureUrl": "/assets/users/user.png",
+    "role": "customer",
+    "addresses": [
+      {
+        "streetAddress": "4140 Parker Rd. Allentown, New Runda 31134",
+        "companyName": "dnx",
+        "country": "Kenya",
+        "state": "Nairobi DC",
+        "zipCode": "20033",
+        "isBilling": true
+      }
+    ],
+    "wishlist": [
+      "67f89a79c4c23ab8108a4f02"
+    ],
+    "cart": [
+      {
+        "productId": "67f89a79c4c23ab8108a4f02",
+        "quantity": 1
+      },
+      {
+        "productId": "67f89a79c4c23ab8108a4f03",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "_id": "67f89a79c4c23ab8108a4e02",
+    "firstName": "Dianne",
+    "lastName": "Russell",
+    "email": "dainne.ressell@gmail.com",
+    "phone": "(671) 555-0110",
+    "passwordHash": "$2a$10$NotARealHash...def456uvw123",
+    "profilePictureUrl": "/assets/users/user-1.png",
+    "role": "customer",
+    "addresses": [
+      {
+        "streetAddress": "4140 Parker Rd. Allentown, New Mexico 31134",
+        "companyName": null,
+        "country": "USA",
+        "state": "New Mexico",
+        "zipCode": "31134",
+        "isBilling": true
+      }
+    ],
+    "wishlist": [],
+    "cart": []
+  }
+]

@@ -1,7 +1,21 @@
+import Categories from "@/components/module/home/Categories";
+import FeaturedProducts from "@/components/module/home/FeaturedProducts";
+import Features from "@/components/module/home/Features";
+import HeroSection from "@/components/module/home/hero/HeroSection";
+import NewestProducts from "@/components/module/home/NewestProducts";
+import Promotions from "@/components/module/home/Promotions";
+import Testimonials from "@/components/module/home/Testimonials";
+
 export default function Home() {
   return (
-    <div>
-      <h1>helllo</h1>
+    <div className="space-y-16">
+      <HeroSection />
+      <Features />
+      <Categories />
+      <FeaturedProducts />
+      <Promotions />
+      <NewestProducts />
+      <Testimonials />
     </div>
   );
 }

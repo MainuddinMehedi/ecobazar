@@ -1,0 +1,40 @@
+[
+  {
+    "_id": "67f89a79c4c23ab8108a5a01",
+    "orderId": "#4152",
+    "userId": "67f89a79c4c23ab8108a4e02",
+    "orderDate": "2021-04-24T10:30:00Z",
+    "status": "Processing",
+    "orderedItems": [
+      {
+        "productId": "67f89a79c4c23ab8108a4f01",
+        "quantity": 5
+      },
+      {
+        "productId": "67f89a79c4c23ab8108a4f02",
+        "quantity": 2
+      },
+      {
+        "productId": "67f89a79c4c23ab8108a4f03",
+        "quantity": 10
+      }
+    ],
+    "paymentMethod": "Paypal",
+    "billingAddress": {
+      "name": "Dainne Russell",
+      "address": "4140 Parker Rd. Allentown, New Mexico 31134",
+      "email": "dainne.ressell@gmail.com",
+      "phone": "(671) 555-0110"
+    },
+    "shippingAddress": {
+      "name": "Dainne Russell",
+      "address": "4140 Parker Rd. Allentown, New Mexico 31134",
+      "email": "dainne.ressell@gmail.com",
+      "phone": "(671) 555-0110"
+    },
+    "subtotal": 365.0,
+    "shippingCost": 0.0,
+    "discount": 0.0,
+    "total": 84.0
+  }
+]
