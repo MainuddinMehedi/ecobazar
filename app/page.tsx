@@ -4,6 +4,7 @@ import Features from "@/components/module/home/Features";
 import HeroSection from "@/components/module/home/hero/HeroSection";
 import NewestProducts from "@/components/module/home/NewestProducts";
 import Promotions from "@/components/module/home/Promotions";
+import Testimonials from "@/components/module/home/Testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <FeaturedProducts />
       <Promotions />
       <NewestProducts />
+      <Testimonials />
     </div>
   );
 }

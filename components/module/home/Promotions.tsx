@@ -26,7 +26,7 @@ const promotions = [
 
 export default function Promotions() {
   return (
-    <div className="flex gap-6 h-[550]">
+    <div className="flex gap-6 h-[620]">
       {promotions.map((promo, index) => (
         <PromotionCard key={index} details={promo} />
       ))}
