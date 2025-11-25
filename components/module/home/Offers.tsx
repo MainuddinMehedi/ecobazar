@@ -1,5 +1,5 @@
 import PromotionCard from "@/components/common/PromotionCard";
-import OfferProductCard from "../products/OfferProductCard";
+import OfferProductsCard from "../products/OfferProductsCard";
 
 // interface Promotion {
 //   name: String;
@@ -18,15 +18,15 @@ export default function Offers() {
     <div className="flex gap-5 mt-20">
       <div className="flex-1 space-y-4">
         <h1 className="text-xl font-medium">Hot Deals</h1>
-        <OfferProductCard />
+        <OfferProductsCard />
       </div>
       <div className="flex-1 space-y-4">
         <h1 className="text-xl font-medium">Best Seller</h1>
-        <OfferProductCard />
+        <OfferProductsCard />
       </div>
       <div className="flex-1 space-y-4">
         <h1 className="text-xl font-medium">Top Rated</h1>
-        <OfferProductCard />
+        <OfferProductsCard />
       </div>
 
       <div className="w-[312px] h-[426px]">
