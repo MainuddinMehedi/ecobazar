@@ -1,11 +1,19 @@
+import SidebarFilters from "@/components/module/shop/filters/SidebarFilters";
+
 export default function ShopPage() {
   return (
-    <div>
-      <h1 className="text-5xl">Hello</h1>
-
+    <div className="grid grid-cols-4 gap-6">
       {/* sidebar - filter, offer promo, spacial products */}
+      <aside className="col-span-1 bg-gray-">
+        <SidebarFilters />
+      </aside>
+
       {/* products */}
       {/* pagination */}
+      <main className="col-span-3  bg-gray-100 text-5xl">
+        {" "}
+        This is main section where all the products will be.
+      </main>
     </div>
   );
 }
