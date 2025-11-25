@@ -35,7 +35,7 @@ export default function BreadcrumbLinks() {
 
   return (
     <div className="relative w-screen left-1/2 -translate-x-1/2">
-      <Breadcrumb className="h-[70px] flex flex-col justify-center w-[89%] mx-auto">
+      <Breadcrumb className="h-[80px] flex flex-col justify-center w-[89%] mx-auto">
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink asChild>

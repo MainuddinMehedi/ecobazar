@@ -2,14 +2,23 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Button } from "../ui/button";
 
-export default function PromotionCard({ details }) {
+interface Details {
+  name?: string;
+  heading?: string;
+  offer?: string;
+  endsIn?: number;
+  image: string;
+  imgStyles?: string;
+}
+
+export default function PromotionCard({ details }: { details: Details }) {
   return (
     <div className="flex-1 relative overflow-hidden w-full h-full">
       <Image
         src={details?.image}
-        alt="Summer Sale Offer"
+        alt={details?.name || "Offer Image"}
         fill
-        className="-z-10 w-full"
+        className={`-z-10 w-full object-cover ${details?.imgStyles}`}
       />
 
       <div className="text-center h-full space-y-4 flex flex-col items-center mt-12">

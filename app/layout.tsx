@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Ecobazar",
   description: "Fresh & Healthy Organic Food",
 };
-
+//
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,12 +27,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${cn(poppins.className, inter.className)} antialiased`}>
-        <Header />
-        <div className="flex justify-center">
-          <div className="w-[90%]">{children}</div>
+        <div>
+          <Header />
+          <div className="flex justify-center">
+            <div className="w-[90%]">{children}</div>
+          </div>
         </div>
-        <Newsletter />
-        <Footer />
+        <div className="mt-16">
+          <Newsletter />
+          <Footer />
+        </div>
       </body>
     </html>
   );
