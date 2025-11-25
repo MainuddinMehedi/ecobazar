@@ -20,7 +20,6 @@ export default function BreadcrumbLinks() {
 
   // Create breadcrumb items with proper paths
   const breadcrumbItems = pathSegments.map((segment, index) => {
-    // Create the path up to this segment
     const href = "/" + pathSegments.slice(0, index + 1).join("/");
 
     // Convert slug to readable title (capitalize first letter and replace hyphens with spaces)
