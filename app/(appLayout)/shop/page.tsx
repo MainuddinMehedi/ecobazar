@@ -1,4 +1,5 @@
 import ShopSidebar from "@/components/module/shop/filters/ShopSidebar";
+import ProductsFeed from "@/components/module/shop/products/ProductsFeed";
 
 export default function ShopPage() {
   return (
@@ -8,11 +9,9 @@ export default function ShopPage() {
         <ShopSidebar />
       </aside>
 
-      {/* products */}
-      {/* pagination */}
-      <main className="col-span-3  bg-gray-100 text-5xl">
-        {" "}
-        This is main section where all the products will be.
+      {/* products + pagination */}
+      <main className="col-span-3 border">
+        <ProductsFeed />
       </main>
     </div>
   );
