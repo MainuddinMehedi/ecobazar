@@ -26,14 +26,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${cn(poppins.className, inter.className)} antialiased`}>
+      <body
+        className={`${cn(poppins.className, inter.className)} antialiased space-y-4`}
+      >
         <div>
           <Header />
           <div className="flex justify-center">
             <div className="w-[90%]">{children}</div>
           </div>
         </div>
-        <div className="mt-16">
+        <div className="mt-">
           <Newsletter />
           <Footer />
         </div>
