@@ -5,7 +5,7 @@ import RatingFilter from "./RatingFilter";
 import { Separator } from "@/components/ui/separator";
 import TagsFilter from "./TagsFilter";
 import PromotionCard from "@/components/common/PromotionCard";
-import OfferProductsCard from "../../products/OfferProductsCard";
+import OfferProductsCard from "@/components/common/products/OfferProductsCard";
 
 const promotion = {
   name: "",

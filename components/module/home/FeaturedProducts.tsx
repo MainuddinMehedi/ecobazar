@@ -1,4 +1,4 @@
-import ProductCard from "../products/ProductCard";
+import ProductCard from "@/components/common/products/ProductCard";
 import Offers from "./Offers";
 
 export default function FeaturedProducts() {

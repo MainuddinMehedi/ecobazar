@@ -1,5 +1,5 @@
+import OfferProductsCard from "@/components/common/products/OfferProductsCard";
 import PromotionCard from "@/components/common/PromotionCard";
-import OfferProductsCard from "../products/OfferProductsCard";
 
 // interface Promotion {
 //   name: String;
