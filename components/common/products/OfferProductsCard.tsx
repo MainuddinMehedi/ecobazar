@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function OfferProductsCard() {
   return (
-    <Card className="hover:border-success/50 hover:shadow-lg hover:shadow-success/10">
-      <Link href={"/blog/1"}>
+    <Link href={"/shop/1"} className="block">
+      <Card className="hover:border-success/50 hover:shadow-lg hover:shadow-success/10">
         <CardContent className="flex justify-around px-0">
           <Image
             src={"/assets/products/product-3.png"}
@@ -24,7 +24,7 @@ export default function OfferProductsCard() {
             </span>
           </div>
         </CardContent>
-      </Link>
-    </Card>
+      </Card>
+    </Link>
   );
 }

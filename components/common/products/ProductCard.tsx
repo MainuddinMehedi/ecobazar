@@ -1,12 +1,19 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Product } from "@/types";
 import { Handbag, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ProductCard() {
+interface ProductCardProps {
+  product: Product;
+}
+
+export default function ProductCard({ product }: ProductCardProps) {
+  console.log(product);
+
   return (
-    <Card className="w-[300px] h-[400px] rounded-xl flex justify-between hover:border-success/50 hover:shadow-lg hover:shadow-success/10">
-      <Link href={"/blog/1"}>
+    <Link href={"/blog/1"}>
+      <Card className="w-[300px] h-[400px] rounded-xl flex justify-between transition-all duration-300 hover:border-success/50 hover:shadow-lg hover:shadow-success/10">
         <CardContent>
           <Image
             src="/assets/products/apple.png"
@@ -30,7 +37,7 @@ export default function ProductCard() {
             <Handbag className="w-6 h-6 text-gray-900" />
           </div>
         </CardContent>
-      </Link>
-    </Card>
+      </Card>
+    </Link>
   );
 }
