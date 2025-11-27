@@ -58,7 +58,14 @@ export default async function ProductDetailsPage({
         </div>
 
         {/* Additional information */}
-        <AdditionalInfoTab />
+        <div className="flex justify-center">
+          <AdditionalInfoTab
+            description={product.description}
+            additionalInfo={product.additionalInfo}
+            reviewCount={product.reviewCount}
+            rating={product.rating}
+          />
+        </div>
       </div>
       <div>
         <h1 className="heading-primary">RelatedProducts</h1>
