@@ -1,4 +1,34 @@
+// export interface Product {
+//   id: number;
+//   name: string;
+// }
+
 export interface Product {
-  id: number;
+  _id: string;
   name: string;
+  sku: string;
+  description: string;
+  images: string[];
+  price: number;
+  salePrice: number;
+  stock: number;
+  rating: number;
+  brand: Brand;
+  categoryId: string;
+  isFeatured: boolean;
+  tags: string[];
+  additionalInfo: ProductAdditionalInfo;
+  reviewCount?: number;
+  featuredAds?: string[];
+}
+
+export interface ProductAdditionalInfo {
+  weight: string;
+  color: string;
+  type: string;
+}
+
+export interface Brand {
+  name: string;
+  logo: string;
 }

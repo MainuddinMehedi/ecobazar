@@ -5,8 +5,9 @@ import Link from "next/link";
 
 export default function OfferProductsCard() {
   return (
-    <Link href={"/shop/1"} className="block">
-      <Card className="hover:border-success/50 hover:shadow-lg hover:shadow-success/10">
+    <Link href={"/shop/product/1"} className="block">
+      {/* <Card className="hover:border-success/50 hover:shadow-lg hover:shadow-success/10"> */}
+      <Card className="hover-primary">
         <CardContent className="flex justify-around px-0">
           <Image
             src={"/assets/products/product-3.png"}
