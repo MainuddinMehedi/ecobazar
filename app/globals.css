@@ -175,3 +175,23 @@
     @apply text-[40px] font-semibold text-gray-900 mb-8;
   }
 }
+
+.hover-primary {
+  @apply transition-all duration-300 hover:border-success/50 hover:shadow-lg hover:shadow-success/10;
+}
+
+.badge-primary {
+  @apply py-1 px-2 rounded bg-success/20 text-hard-primary;
+}
+
+.badge-destructive {
+  @apply py-1 px-2 rounded bg-danger/20 text-danger;
+}
+
+.badge-destructive-fill {
+  @apply py-1 px-2 rounded bg-danger text-white;
+}
+
+.badge-warning {
+  @apply py-1 px-2 rounded bg-warning/20 text-warning;
+}

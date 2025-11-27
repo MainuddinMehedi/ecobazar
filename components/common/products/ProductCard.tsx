@@ -12,8 +12,8 @@ export default function ProductCard({ product }: ProductCardProps) {
   console.log(product);
 
   return (
-    <Link href={"/blog/1"}>
-      <Card className="w-[300px] h-[400px] rounded-xl flex justify-between transition-all duration-300 hover:border-success/50 hover:shadow-lg hover:shadow-success/10">
+    <Link href={"/shop/product/1"}>
+      <Card className="w-[300px] h-[400px] rounded-xl flex justify-between hover-primary">
         <CardContent>
           <Image
             src="/assets/products/apple.png"
