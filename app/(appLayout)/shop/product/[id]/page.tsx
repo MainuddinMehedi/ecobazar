@@ -19,7 +19,7 @@ const product = {
   salePrice: 17.28,
   stock: 13,
   rating: 4.0,
-  reviewCount: 12,
+  reviewCount: 12, // i should store the direct reviews instead. i can easily calculate the count from that.
   brand: {
     name: "farmary",
     logo: "/assets/companies/food.png",
@@ -63,6 +63,7 @@ export default async function ProductDetailsPage({
             description={product.description}
             additionalInfo={product.additionalInfo}
             reviewCount={product.reviewCount}
+            stock={product.stock}
             rating={product.rating}
           />
         </div>

@@ -1,3 +1,4 @@
+import StarGroup from "@/components/common/StarGroup";
 import {
   Accordion,
   AccordionContent,
@@ -43,14 +44,7 @@ export default function RatingFilter() {
               />
 
               <Label htmlFor={`rating-${rating.id}`}>
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <Star
-                    key={index}
-                    className="w-[18px] h-[18px]"
-                    fill={index + 1 <= rating.value ? "#ff8a00" : "#b4ccb4"}
-                    strokeWidth={0}
-                  />
-                ))}
+                <StarGroup value={rating.value} size={18} />
                 <p className="text-sm text-gray-800">
                   {rating.value < 5
                     ? `${rating.value}.0 & up`
