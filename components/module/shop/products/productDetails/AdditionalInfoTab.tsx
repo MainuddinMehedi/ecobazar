@@ -45,7 +45,7 @@ export default function AdditionalInfoTab({
   return (
     <Tabs
       defaultValue="descriptions"
-      className="w-full h-[500px] flex items-center"
+      className="w-full max-h-fit flex items-center"
     >
       {/* ---------------- Tabs List ---------------- */}
       <TabsList className="w-[50%] h-12 bg-transparent px-0 rounded-none">
@@ -117,9 +117,7 @@ export default function AdditionalInfoTab({
           </div>
 
           {/* Promo Card (Right Column) */}
-          <div className="lg:col-span-1">
-            <PromoVideoCard />
-          </div>
+          <PromoVideoCard />
         </div>
       </TabsContent>
 
@@ -223,6 +221,9 @@ export default function AdditionalInfoTab({
           ) : (
             <p>There are no reviews.</p>
           )}
+          <button className="py-3.5 px-8 bg-success/10 text-success rounded-4xl">
+            Load More
+          </button>
         </div>
       </TabsContent>
     </Tabs>

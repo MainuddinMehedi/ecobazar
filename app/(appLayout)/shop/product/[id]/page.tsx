@@ -3,6 +3,8 @@ import ProductDetails from "@/components/module/shop/products/productDetails/Pro
 import ProductImageGallery from "@/components/module/shop/products/productDetails/ProductImageGallery";
 import RelatedProducts from "@/components/module/shop/products/productDetails/RelatedProducts";
 
+// TODO: ProductImageGallery image should show the image in the main image pane when clicked
+
 const product = {
   _id: "67f89a79c4c23ab8108a4f01",
   name: "Chinese Cabbage",
@@ -46,13 +48,11 @@ export default async function ProductDetailsPage({
 }) {
   const { id } = await params;
 
-  // console.log("product id from param in productDetailsPage: ", id);
-
   return (
-    <div className="space-y-18">
-      <div>
+    <div className="space-y-15">
+      <div className="space-y-18">
         {/* products details  */}
-        <div className="flex justify-between">
+        <div className="flex justify-between max-h-fit box-border">
           <ProductImageGallery images={product.images} />
           <ProductDetails product={product} />
         </div>
