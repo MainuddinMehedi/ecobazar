@@ -19,7 +19,7 @@ const product = {
   salePrice: 17.28,
   stock: 13,
   rating: 4.0,
-  reviewCount: 12, // i should store the direct reviews instead. i can easily calculate the count from that.
+  reviewCount: 12, // TODO: i should store the direct reviews instead. i can easily calculate the count from that.
   brand: {
     name: "farmary",
     logo: "/assets/companies/food.png",

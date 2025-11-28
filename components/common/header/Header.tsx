@@ -38,7 +38,7 @@ export default function Header() {
           </div>
 
           <div className="flex justify-center items-center gap-4">
-            <Link href={"/whishlist"}>
+            <Link href={"/wishlist"}>
               <Heart className="w-9 h-9 text-gray-800" />
             </Link>
             <span className="h-6 border-r bg-gray-200" />

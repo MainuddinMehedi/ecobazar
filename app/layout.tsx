@@ -35,7 +35,7 @@ export default function RootLayout({
             <div className="w-[90%]">{children}</div>
           </div>
         </div>
-        <div className="mt-">
+        <div>
           <Newsletter />
           <Footer />
         </div>

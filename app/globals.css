@@ -167,13 +167,17 @@
     background: var(--color-info-blue);
   }
 
-  .btn-normal {
-    @apply bg-success text-white rounded-[43px] py-4 px-8;
-  }
-
   .heading-primary {
     @apply text-[40px] font-semibold text-gray-900 mb-8;
   }
+}
+
+.btn-normal {
+  @apply bg-success text-white text-[15px] font-medium rounded-[43px] py-4 px-8;
+}
+
+.btn-black {
+  @apply bg-gray-800 text-white text-[15px] font-medium rounded-[43px] py-5 px-8;
 }
 
 .hover-primary {
