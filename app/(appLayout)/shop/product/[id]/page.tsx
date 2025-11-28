@@ -3,8 +3,6 @@ import ProductDetails from "@/components/module/shop/products/productDetails/Pro
 import ProductImageGallery from "@/components/module/shop/products/productDetails/ProductImageGallery";
 import RelatedProducts from "@/components/module/shop/products/productDetails/RelatedProducts";
 
-// TODO: ProductImageGallery image should show the image in the main image pane when clicked
-
 const product = {
   _id: "67f89a79c4c23ab8108a4f01",
   name: "Chinese Cabbage",
@@ -69,7 +67,7 @@ export default async function ProductDetailsPage({
         </div>
       </div>
       <div>
-        <h1 className="heading-primary">RelatedProducts</h1>
+        <h1 className="heading-primary text-center">Related Products</h1>
         <RelatedProducts />
       </div>
     </div>

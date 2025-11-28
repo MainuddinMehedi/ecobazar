@@ -63,8 +63,11 @@ export default function Testimonials() {
           </div>
 
           <CarouselContent className="flex gap-3">
-            {testimonials.map((item) => (
-              <TestimonialCard key={item._id} item={item} />
+            {testimonials.map((testimonial) => (
+              <TestimonialCard
+                key={testimonial._id}
+                testimonial={testimonial}
+              />
             ))}
           </CarouselContent>
         </Carousel>

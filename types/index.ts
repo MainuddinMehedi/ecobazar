@@ -1,8 +1,3 @@
-// export interface Product {
-//   id: number;
-//   name: string;
-// }
-
 export interface Product {
   _id: string;
   name: string;
@@ -31,4 +26,14 @@ export interface ProductAdditionalInfo {
 export interface Brand {
   name: string;
   logo: string;
+}
+
+export interface Testimonial {
+  _id: string;
+  authorId: string;
+  authorName: string;
+  authorRole: string;
+  profilePictureUrl: string;
+  content: string;
+  rating: number;
 }

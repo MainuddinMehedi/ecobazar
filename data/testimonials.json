@@ -4,6 +4,7 @@
     "authorId": "67f89a79c4c23ab8108a4e01",
     "authorName": "Dennis Nzioki",
     "authorRole": "Customer",
+    "profilePictureUrl": "/assets/users/user-2.png",
     "content": "Great service and quality products! Highly recommend EcoBazar for all your organic needs.",
     "rating": 5
   },
@@ -12,7 +13,9 @@
     "authorId": "67f89a79c4c23ab8108a4e02",
     "authorName": "Dianne Russell",
     "authorRole": "Customer",
+    "profilePictureUrl": "/assets/users/user-1.png",
     "content": "I love shopping at EcoBazar. Their selection of fresh produce is unmatched, and the staff is always friendly and helpful.",
     "rating": 5
   }
 ]
+
