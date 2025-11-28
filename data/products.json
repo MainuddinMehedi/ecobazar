@@ -14,7 +14,11 @@
     "salePrice": 17.28,
     "stock": 13,
     "rating": 4.0,
-    "brand": "farmary",
+    "reviewCount": 12,
+    "brand": {
+      "name": "farmary",
+      "logo": "/assets/companies/food.png"
+    },
     "categoryId": "67f89a79c4c23ab8108a4c02",
     "isFeatured": true,
     "tags": [
@@ -27,40 +31,32 @@
       "color": "Green",
       "type": "Organic"
     },
-    "featuredAds": [
-      "Best Seller"
-    ]
+    "featuredAds": ["Best Seller"]
   },
   {
     "_id": "67f89a79c4c23ab8108a4f02",
     "name": "Green Apple",
     "sku": "SKU-98214",
     "description": "A crisp and healthy organic green apple.",
-    "images": [
-      "/assets/products/product-1.png",
-      "/assets/products/apple.png"
-    ],
+    "images": ["/assets/products/product-1.png", "/assets/products/apple.png"],
     "price": 20.99,
     "salePrice": 14.99,
     "stock": 50,
     "rating": 5.0,
     "reviewCount": 12,
-    "brand": "farmary",
+    "brand": {
+      "name": "farmary",
+      "logo": "/assets/companies/food.png"
+    },
     "categoryId": "67f89a79c4c23ab8108a4c01",
     "isFeatured": false,
-    "tags": [
-      "67f89a79c4c23ab8108a4d01",
-      "67f89a79c4c23ab8108a4d04"
-    ],
+    "tags": ["67f89a79c4c23ab8108a4d01", "67f89a79c4c23ab8108a4d04"],
     "additionalInfo": {
       "weight": "1kg",
       "color": "Green",
       "type": "Organic"
     },
-    "featuredAs": [
-      "Hot Deal",
-      "Top Rated"
-    ]
+    "featuredAds": ["Hot Deal", "Top Rated"]
   },
   {
     "_id": "67f89a79c4c23ab8108a4f03",
@@ -76,18 +72,18 @@
     "stock": 20,
     "rating": 5.0,
     "reviewCount": 8,
-    "brand": "farmary",
+    "brand": {
+      "name": "farmary",
+      "logo": "/assets/companies/food.png"
+    },
     "categoryId": "67f89a79c4c23ab8108a4c02",
     "isFeatured": true,
-    "tags": [
-      "67f89a79c4c23ab8108a4d01",
-      "67f89a79c4c23ab8108a4d03"
-    ],
+    "tags": ["67f89a79c4c23ab8108a4d01", "67f89a79c4c23ab8108a4d03"],
     "additionalInfo": {
       "weight": "0.4kg",
       "color": "Green",
       "type": "Organic"
     },
-    "featuredAs": []
+    "featuredAds": []
   }
 ]

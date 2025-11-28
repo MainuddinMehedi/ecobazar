@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
-import Subscribe from "@/components/common/Subscribe";
+import Newsletter from "@/components/common/Newsletter";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Ecobazar",
   description: "Fresh & Healthy Organic Food",
 };
-
+//
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,13 +26,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${cn(poppins.className, inter.className)} antialiased`}>
-        <Header />
-        <div className="flex justify-center">
-          <div className="w-[90%]">{children}</div>
+      <body
+        className={`${cn(poppins.className, inter.className)} antialiased space-y-4`}
+      >
+        <div>
+          <Header />
+          <div className="flex justify-center">
+            <div className="w-[90%]">{children}</div>
+          </div>
         </div>
-        <Subscribe />
-        <Footer />
+        <div>
+          <Newsletter />
+          <Footer />
+        </div>
       </body>
     </html>
   );

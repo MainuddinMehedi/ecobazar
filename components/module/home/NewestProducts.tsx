@@ -1,6 +1,6 @@
+import ProductCard from "@/components/common/products/ProductCard";
 import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
-import ProductCard from "../products/ProductCard";
 
 export default function NewestProducts() {
   return (

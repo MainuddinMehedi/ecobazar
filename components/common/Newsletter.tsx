@@ -1,11 +1,11 @@
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
-export default function Subscribe() {
+export default function Newsletter() {
   return (
     <div className="flex justify-center items-center h-[162]">
-      <div className="w-[89%] flex justify-between items-center">
+      <div className="w-[89%] flex justify-between items-">
         <div className="w-2/5 space-y-3">
-          <h1 className="text-2xl font-bold text-gray-900">
+          <h1 className="text-[26px] font-bold text-gray-900">
             Subscribe our Newsletter
           </h1>
           <p className="text-gray-400 text-sm">
