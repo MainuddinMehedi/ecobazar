@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { Star } from "lucide-react";
 
 interface StarGroupProps {
@@ -8,16 +9,21 @@ interface StarGroupProps {
 
 export default function StarGroup({ value, size, styles }: StarGroupProps) {
   return (
-    <span className={`flex items-center gap-1 ${styles}!`}>
+    <div className={`flex items-center gap-0.5 ${styles}!`}>
       {Array.from({ length: 5 }).map((_, index) => (
         <Star
           key={index}
-          // className={`w-[18px] h-[18px] ${styles}`}
-          fill={index + 1 <= value ? "#ff8a00" : "#b4ccb4"}
+          className={cn(
+            index + 1 <= value
+              ? "fill-yellow-400 text-yellow-400"
+              : "text-gray-300 fill-gray-300",
+            `${styles}`,
+          )}
+          // fill={index + 1 <= value ? "#ff8a00" : "#b4ccb4"}
           strokeWidth={0}
           size={size || 16}
         />
       ))}
-    </span>
+    </div>
   );
 }

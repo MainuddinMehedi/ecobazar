@@ -10,18 +10,18 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
-  console.log(product);
+  console.log("from product card", product);
 
   return (
     <Link href={"/shop/product/1"}>
-      <Card className="w-[300px] h-[400px] rounded-xl flex justify-between hover-primary">
-        <CardContent>
+      <Card className="w-full h-[400px] rounded-xl flex justify-between hover-primary">
+        <CardContent className="flex justify-center">
           <Image
             src="/assets/products/apple.png"
             alt="Product Image"
             width={246}
             height={246}
-            className="w-full h-full"
+            className="object-cover"
           />
         </CardContent>
         <CardContent className="flex justify-between items-center mb-4">

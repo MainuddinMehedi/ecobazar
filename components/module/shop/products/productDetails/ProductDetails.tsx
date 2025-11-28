@@ -1,6 +1,7 @@
 "use client";
 
 import SocialIcon from "@/components/common/icons/SocialIcon";
+import StarGroup from "@/components/common/StarGroup";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -23,6 +24,11 @@ interface ProductDetailsProps {
   product: Product;
 }
 
+// TODO: Implement product quantity select increment/decrement
+// TODO: Link component for socials and other
+// TODO: handleAddToCart
+// TODO: handleWishlist
+
 export default function ProductDetails({ product }: ProductDetailsProps) {
   const [quantity, setQuantity] = useState(1);
   console.log("product from ProductDetails component: ", product);
@@ -44,19 +50,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
         {/* rating and sku */}
         <div className="flex gap-3">
           <div className="flex items-center gap-2">
-            <div className="flex items-center gap-1">
-              {/* TODO: use a custom component here for star. */}
-              {[...Array(5)].map((_, i) => (
-                <Star
-                  key={i}
-                  className={`w-4 h-4 ${
-                    i < Math.round(product.rating)
-                      ? "fill-yellow-400 text-yellow-400"
-                      : "text-gray-300 fill-gray-300"
-                  }`}
-                />
-              ))}
-            </div>
+            <StarGroup value={product.rating} size={18} styles="mb-1" />
             <span className="text-gray-600">{product?.reviewCount} Review</span>
           </div>
           <span className="h-1 w-1 rounded-full bg-gray-300 my-auto" />

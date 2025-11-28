@@ -25,7 +25,7 @@ export default function ProductsFeed() {
         // For now, using mock data
 
         const mockProducts = [...Array(productsPerPage)].map((_, i) => ({
-          id: (currentPage - 1) * productsPerPage + i + 1,
+          _id: (currentPage - 1) * productsPerPage + i + 1,
           name: `Product ${(currentPage - 1) * productsPerPage + i + 1}`,
         }));
 
