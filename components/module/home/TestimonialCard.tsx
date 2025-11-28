@@ -1,8 +1,19 @@
+import StarGroup from "@/components/common/StarGroup";
 import { CarouselItem } from "@/components/ui/carousel";
 import { Star } from "lucide-react";
 import Image from "next/image";
 
-export default function TestimonialCard({ item }) {
+interface Testimonial {
+  _id: string;
+  authorId: string;
+  authorName: string;
+  authorRole: string;
+  profilePictureUrl: string;
+  content: string;
+  rating: number;
+}
+
+export default function TestimonialCard({ item }: { item: Testimonial }) {
   return (
     <CarouselItem className="basis-1/3 px-10 flex flex-col justify-evenly h-[254] space-y-6 bg-white rounded-xl">
       <p className="text-[16px] text-gray-700">{item?.content}</p>
@@ -19,11 +30,7 @@ export default function TestimonialCard({ item }) {
             <p className="text-sm text-gray-400">{item?.authorRole}</p>
           </div>
         </div>
-        <div className="flex gap-1">
-          {Array.from({ length: item?.rating }).map((_, index) => (
-            <Star key={index} size={16} fill="yellow" />
-          ))}
-        </div>
+        <StarGroup value={item?.rating} />
       </div>
     </CarouselItem>
   );

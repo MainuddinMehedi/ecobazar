@@ -3,6 +3,8 @@ import ProductDetails from "@/components/module/shop/products/productDetails/Pro
 import ProductImageGallery from "@/components/module/shop/products/productDetails/ProductImageGallery";
 import RelatedProducts from "@/components/module/shop/products/productDetails/RelatedProducts";
 
+// TODO: ProductImageGallery image should show the image in the main image pane when clicked
+
 const product = {
   _id: "67f89a79c4c23ab8108a4f01",
   name: "Chinese Cabbage",
@@ -19,7 +21,7 @@ const product = {
   salePrice: 17.28,
   stock: 13,
   rating: 4.0,
-  reviewCount: 12,
+  reviewCount: 12, // i should store the direct reviews instead. i can easily calculate the count from that.
   brand: {
     name: "farmary",
     logo: "/assets/companies/food.png",
@@ -46,19 +48,25 @@ export default async function ProductDetailsPage({
 }) {
   const { id } = await params;
 
-  // console.log("product id from param in productDetailsPage: ", id);
-
   return (
-    <div className="space-y-18">
-      <div>
+    <div className="space-y-15">
+      <div className="space-y-18">
         {/* products details  */}
-        <div className="flex justify-between">
+        <div className="flex justify-between max-h-fit box-border">
           <ProductImageGallery images={product.images} />
           <ProductDetails product={product} />
         </div>
 
         {/* Additional information */}
-        <AdditionalInfoTab />
+        <div className="flex justify-center">
+          <AdditionalInfoTab
+            description={product.description}
+            additionalInfo={product.additionalInfo}
+            reviewCount={product.reviewCount}
+            stock={product.stock}
+            rating={product.rating}
+          />
+        </div>
       </div>
       <div>
         <h1 className="heading-primary">RelatedProducts</h1>

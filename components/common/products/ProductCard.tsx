@@ -3,6 +3,7 @@ import { Product } from "@/types";
 import { Handbag, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import StarGroup from "../StarGroup";
 
 interface ProductCardProps {
   product: Product;
@@ -28,9 +29,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             <h2 className="text-sm  text-gray-700">Green Apple</h2>
             <p className="text-xl text-gray-900 font-medium">$14.99</p>
             <span className="flex items-center gap-1">
-              <Star size={16} fill="yellow" />
-              <Star size={16} fill="yellow" />
-              <Star size={16} fill="yellow" />
+              <StarGroup value={5} size={16} />
             </span>
           </div>
           <div className="w-12 h-12 rounded-full bg-gray-50 flex justify-center items-center">
