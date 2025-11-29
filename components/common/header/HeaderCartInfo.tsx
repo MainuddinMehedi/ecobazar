@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetFooter,
   SheetHeader,
@@ -46,12 +47,16 @@ export function HeaderCartInfo() {
             <span className="font-normal">2 Product</span>
             <span className="font-bold">$26.00</span>
           </p>
-          <Link href={"/checkout"} className="btn-normal text-center">
-            Checkout
-          </Link>
-          <Link href={"/cart"} className="btn-secondary py-4! text-center">
-            Go to Cart
-          </Link>
+          <SheetClose asChild>
+            <Link href={"/checkout"} className="btn-normal text-center">
+              Checkout
+            </Link>
+          </SheetClose>
+          <SheetClose asChild>
+            <Link href={"/cart"} className="btn-secondary py-4! text-center">
+              Go to Cart
+            </Link>
+          </SheetClose>
         </SheetFooter>
       </SheetContent>
     </Sheet>
