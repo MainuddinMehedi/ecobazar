@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./Navbar";
 import Topbar from "./Topbar";
+import { HeaderCartInfo } from "./HeaderCartInfo";
 
 export default function Header() {
   return (
@@ -41,17 +42,10 @@ export default function Header() {
             <Link href={"/wishlist"}>
               <Heart className="w-9 h-9 text-gray-800" />
             </Link>
+
             <span className="h-6 border-r bg-gray-200" />
-            <Link
-              href={"/cart"}
-              className="flex justify-center items-center gap-2"
-            >
-              <Handbag className="w-9 h-9 text-gray-800" />
-              <div>
-                <p className="text-gray-700 text-sm">Shopping cart:</p>
-                <span className="text-gray-900 font-medium">$50</span>
-              </div>
-            </Link>
+
+            <HeaderCartInfo />
           </div>
         </div>
       </div>

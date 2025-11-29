@@ -180,6 +180,10 @@
   @apply bg-gray-800 text-white text-[15px] font-medium rounded-[43px] py-5 px-8;
 }
 
+.btn-secondary {
+  @apply bg-success/20 hover:bg-success/30 text-success text-[15px] font-medium rounded-[43px] py-6 px-8 transition-colors duration-300;
+}
+
 .hover-primary {
   @apply transition-all duration-300 hover:border-success/50 hover:shadow-lg hover:shadow-success/10;
 }
