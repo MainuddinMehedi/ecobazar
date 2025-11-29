@@ -1,14 +1,13 @@
 import CartTable from "@/components/module/cart/CartTable";
 import CartTotal from "@/components/module/cart/CartTotal";
-import { Button } from "@/components/ui/button";
 
-export default function page() {
+export default function CartPage() {
   return (
     <div>
       <h1 className="heading-primary text-center">My Shopping Cart</h1>
 
       {/* Cart Table */}
-      <div className="flex w-full gap-7">
+      <div className="flex flex-col lg:flex-row w-full gap-7">
         <div className="basis-[70%] space-y-7">
           <CartTable />
 
@@ -25,6 +24,7 @@ export default function page() {
             </div>
           </div>
         </div>
+
         <div className="basis-[30%]">
           <CartTotal />
         </div>
