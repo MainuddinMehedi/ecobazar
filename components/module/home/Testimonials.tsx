@@ -51,9 +51,13 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div className="relative left-1/2 -translate-x-1/2 w-screen bg-gray-50 py-[100] flex justify-between">
+    <div className="relative left-1/2 -translate-x-1/2 w-screen bg-gray-50 py-[100]">
       <div className="w-[89%] mx-auto">
-        <Carousel>
+        <Carousel
+          opts={{
+            align: "start",
+          }}
+        >
           <div className="flex items-center justify-between mb-6">
             <h1 className="heading-primary">Client Testimonials</h1>
             <div className="flex items-center gap-2">
