@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
 
 export default function CartTotal() {
   return (
@@ -10,31 +10,28 @@ export default function CartTotal() {
       <div className="space-y-8">
         <div className="space-y-4">
           <dl className="flex justify-between">
-            <dt className="text-gray-700">Subtotal:</dt>
-            <dd className="text-gray-900 font-medium">$84.00</dd>
+            <dt className="text-sm text-gray-700">Subtotal:</dt>
+            <dd className="text-gray-900 text-sm font-medium">$84.00</dd>
           </dl>
 
           <Separator />
 
           <dl className="flex justify-between">
-            <dt className="text-gray-700">Shipping:</dt>
-            <dd className="text-gray-900 font-medium">Free</dd>
+            <dt className="text-sm text-gray-700">Shipping:</dt>
+            <dd className="text-gray-900 text-sm font-medium">Free</dd>
           </dl>
 
           <Separator />
 
           <dl className="flex justify-between">
-            <dt className="text-gray-700">Total:</dt>
-            <dd className="text-gray-900 font-bold">$84.00</dd>
+            <dt className="text-sm text-gray-700">Total:</dt>
+            <dd className="text-gray-900 text-[16px] font-semibold">$84.00</dd>
           </dl>
         </div>
 
-        <Button
-          variant={"secondary"}
-          className="btn-normal py-6! w-full text-[15px] font-medium"
-        >
+        <Link href={"/checkout"} className="btn-normal py-2! block text-center">
           Proceed to checkout
-        </Button>
+        </Link>
       </div>
     </Card>
   );
