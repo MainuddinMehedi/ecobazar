@@ -20,14 +20,16 @@ export default function CartTable() {
         <Table className="">
           <TableHeader>
             <TableRow className="">
-              <TableHead className="pl-6 font-medium text-gray-500">
+              <TableHead className="pl-6 font-medium text-sm text-gray-500">
                 PRODUCT
               </TableHead>
-              <TableHead className="font-medium text-gray-500">PRICE</TableHead>
-              <TableHead className="font-medium text-gray-500">
+              <TableHead className="font-medium text-sm text-gray-500">
+                PRICE
+              </TableHead>
+              <TableHead className="font-medium text-sm text-gray-500">
                 QUANTITY
               </TableHead>
-              <TableHead className="font-medium text-gray-500">
+              <TableHead className="font-medium text-sm text-gray-500">
                 SUBTOTAL
               </TableHead>
               {/* <TableHead className="text-right"></TableHead> */}
