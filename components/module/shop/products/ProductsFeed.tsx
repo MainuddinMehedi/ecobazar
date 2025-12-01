@@ -2,9 +2,9 @@
 
 import { Product } from "@/types";
 import { useEffect, useState } from "react";
-import ProductPagination from "./Pagination";
 import ProductsGrid from "./ProductsGrid";
 import FeedHeader from "@/components/common/FeedHeader";
+import Paginations from "@/components/common/Paginations";
 
 export default function ProductsFeed() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -52,7 +52,7 @@ export default function ProductsFeed() {
       {/* <ProductPagination /> */}
       {totalPages > 1 && (
         <div className="flex justify-center">
-          <ProductPagination
+          <Paginations
             currentPage={currentPage}
             totalPages={totalPages}
             onPageChange={handlePageChange}

@@ -15,7 +15,7 @@ interface PaginationProps {
   onPageChange?: (page: number) => void;
 }
 
-export default function ProductPagination({
+export default function Paginations({
   currentPage = 1,
   totalPages = 1,
   onPageChange = () => {},
@@ -65,7 +65,7 @@ export default function ProductPagination({
               "h-10 w-10 rounded-full bg-gray-100 hover:bg-gray-200 border-none text-gray-600 transition-colors",
               currentPage === 1
                 ? "pointer-events-none opacity-50"
-                : "cursor-pointer"
+                : "cursor-pointer",
             )}
           />
         </PaginationItem>
@@ -86,7 +86,7 @@ export default function ProductPagination({
                   "h-10 w-10 rounded-full border-none font-medium",
                   currentPage === page
                     ? "bg-success text-white hover:bg-success hover:text-white"
-                    : "text-gray-600 hover:bg-gray-100"
+                    : "text-gray-600 hover:bg-gray-100",
                 )}
               >
                 {page}
@@ -106,7 +106,7 @@ export default function ProductPagination({
               "h-10 w-10 rounded-full bg-white border border-gray-200 hover:bg-gray-100 text-gray-900 transition-colors",
               currentPage === totalPages
                 ? "pointer-events-none opacity-50"
-                : "cursor-pointer"
+                : "cursor-pointer",
             )}
           />
         </PaginationItem>

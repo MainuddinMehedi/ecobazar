@@ -1,10 +1,17 @@
-export const formatDate = (dateString: string): string => {
+export const formatDate = (dateString: string, dateFormat?: string): string => {
   if (!dateString) return "";
 
   const date = new Date(dateString);
 
   // Checks if date is invalid
   if (isNaN(date.getTime())) return "";
+
+  if (dateFormat === "dd/mm") {
+    return new Intl.DateTimeFormat("en-US", {
+      day: "numeric",
+      month: "short",
+    }).format(date);
+  }
 
   return new Intl.DateTimeFormat("en-US", {
     month: "long", // e.g., "April"

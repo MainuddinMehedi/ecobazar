@@ -3,13 +3,13 @@ import Image from "next/image";
 
 export default function SmallBlogCard() {
   return (
-    <div className="flex gap-4">
+    <div className="flex flex-col gap-4 xl:flex-row">
       <Image
         src={"/assets/blogs/blog-3.png"}
         alt="blog image"
         width={100}
         height={77}
-        className="rounded-md"
+        className="rounded-md w-full xl:w-auto"
       />
       <div className="space-y-2">
         <h3 className="text-[16px] text-gray-900 font-medium">

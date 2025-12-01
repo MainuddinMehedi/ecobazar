@@ -37,3 +37,17 @@ export interface Testimonial {
   content: string;
   rating: number;
 }
+
+export interface Blog {
+  _id: string;
+  title: string;
+  slug: string;
+  excerpt: string;
+  content: string;
+  thumbnailUrl: string;
+  author: string;
+  category: string;
+  tags: string;
+  commentsCount: number;
+  createdAt: string;
+}

@@ -1,5 +1,5 @@
 import { Input } from "@/components/ui/input";
-import { Settings2 } from "lucide-react";
+import { Search, Settings2 } from "lucide-react";
 import CategoryFilter from "../shop/filters/CategoryFilter";
 import { Separator } from "@/components/ui/separator";
 import TagsFilter from "../shop/filters/TagsFilter";
@@ -23,8 +23,13 @@ export default function BlogSidebar() {
         <Settings2 />
       </span>
 
-      <div>
-        <Input type="text" placeholder="Search" />
+      <div className="py-1 px-4 border flex items-center justify-center rounded-md gap-2">
+        <Search className="w-5 h-5 text-gray-600" />
+        <Input
+          type="text"
+          placeholder="Search"
+          className="p-0 border-none outline-none "
+        />
       </div>
 
       <CategoryFilter />
@@ -58,7 +63,7 @@ export default function BlogSidebar() {
         <h3 className="text-[20px] font-semibold text-gray-900 mb-3">
           Recently Added
         </h3>
-        <div className="space-y-5">
+        <div className="space-y-6 xl:space-y-3">
           {[...Array(3)].map((_, i) => (
             <SmallBlogCard key={i} />
           ))}
