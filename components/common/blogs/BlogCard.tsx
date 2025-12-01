@@ -11,7 +11,7 @@ export default function BlogCard({ blog }: { blog: Blog }) {
   const month = dateObj.toLocaleString("en-US", { month: "short" });
 
   return (
-    <Card className="group overflow-hidden p-0 shadow-sm hover:shadow-lg transition-all duration-300">
+    <Card className="group overflow-hidden p-0 shadow-sm hover:shadow-lg transition-all duration-300 rounded-md">
       <CardContent className="p-0">
         {/* Image Container */}
         <div className="relative w-full aspect-4/3 overflow-hidden">
@@ -53,12 +53,12 @@ export default function BlogCard({ blog }: { blog: Blog }) {
           </div>
 
           {/* Title / Excerpt */}
-          <div className="mb-4">
+          <Link href={`/blog/${blog._id}`} className="mb-4 block">
             <h2 className="text-lg font-medium text-gray-900 group-hover:text-success transition-colors line-clamp-2">
               {blog.title || blog.excerpt}{" "}
               {/* Fallback to excerpt if title is missing */}
             </h2>
-          </div>
+          </Link>
 
           {/* Read More Action */}
           <Link href={`/blog/${blog._id}`}>
