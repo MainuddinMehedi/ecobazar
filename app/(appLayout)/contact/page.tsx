@@ -4,6 +4,8 @@ import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPinned, PhoneCall } from "lucide-react";
 
+// TODO: Map needs to be included.
+
 export default function ContactPage() {
   return (
     <div className="">

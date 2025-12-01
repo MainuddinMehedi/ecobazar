@@ -1,4 +1,4 @@
-import SortDropdown from "./SortDropdown";
+import SortDropdown from "../module/shop/products/SortDropdown";
 
 export default function FeedHeader() {
   return (
