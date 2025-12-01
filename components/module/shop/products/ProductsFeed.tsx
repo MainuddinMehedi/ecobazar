@@ -2,9 +2,9 @@
 
 import { Product } from "@/types";
 import { useEffect, useState } from "react";
-import FeedHeader from "./FeedHeader";
 import ProductPagination from "./Pagination";
 import ProductsGrid from "./ProductsGrid";
+import FeedHeader from "@/components/common/FeedHeader";
 
 export default function ProductsFeed() {
   const [currentPage, setCurrentPage] = useState(1);
