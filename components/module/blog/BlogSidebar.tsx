@@ -18,11 +18,6 @@ const images = [
 export default function BlogSidebar() {
   return (
     <div className="space-y-5">
-      <span className="flex gap-2 w-max btn-normal">
-        Filter
-        <Settings2 />
-      </span>
-
       <div className="py-1 px-4 border flex items-center justify-center rounded-md gap-2">
         <Search className="w-5 h-5 text-gray-600" />
         <Input

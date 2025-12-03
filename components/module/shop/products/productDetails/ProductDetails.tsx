@@ -13,8 +13,6 @@ import {
   LucideHandbag,
   Minus,
   Plus,
-  ShoppingBag,
-  Star,
   Twitter,
 } from "lucide-react";
 import Image from "next/image";
@@ -99,10 +97,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
         <div className="flex items-center gap-3 text-muted-foreground">
           <span className="text-gray-900">Share Item: </span>
           <div className="flex gap-2">
-            <SocialIcon
-              icon={Facebook}
-              styles="rounded-full bg-success text-black/10"
-            />
+            <SocialIcon icon={Facebook} />
             <SocialIcon icon={Twitter} />
             <SocialIcon icon={Instagram} />
           </div>
