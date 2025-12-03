@@ -4,6 +4,7 @@ import { Blog } from "@/types";
 import { ArrowRight, MessageSquare, Tag, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import BlogMetadata from "./BlogMetadata";
 
 export default function BlogCard({ blog }: { blog: Blog }) {
   const dateObj = new Date(blog.createdAt);
@@ -37,20 +38,11 @@ export default function BlogCard({ blog }: { blog: Blog }) {
         {/* Text Content */}
         <div className="p-4 xl:p-6">
           {/* Metadata Row */}
-          <div className="flex flex-wrap items-center gap-2 xl:gap-4 text-gray-500 text-sm mb-3">
-            <div className="flex items-center gap-1.5">
-              <Tag className="w-4 h-4 text-green-600" />
-              <span>{blog.category}</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <User className="w-4 h-4 text-green-600" />
-              <span>By {blog.author}</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <MessageSquare className="w-4 h-4 text-green-600" />
-              <span>{blog.commentsCount} Comments</span>
-            </div>
-          </div>
+          <BlogMetadata
+            category={blog.category}
+            author={blog.author}
+            commentsCount={blog.commentsCount}
+          />
 
           {/* Title / Excerpt */}
           <Link href={`/blog/${blog._id}`} className="mb-4 block">

@@ -57,6 +57,7 @@ export default function BlogsFeed() {
   return (
     <div className="space-y-6">
       <FeedHeader />
+
       <div className="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(220px,2fr))] lg:grid-cols-[repeat(auto-fill,minmax(280px,1fr))] xl:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]  gap-4">
         {blogs.map((blog) => (
           <BlogCard key={blog._id} blog={blog} />
