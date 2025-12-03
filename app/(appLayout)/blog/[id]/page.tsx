@@ -1,6 +1,7 @@
 import BlogMetadata from "@/components/common/blogs/BlogMetadata";
 import SocialIcon from "@/components/common/icons/SocialIcon";
 import BlogSidebar from "@/components/module/blog/BlogSidebar";
+import BlogComments from "@/components/module/blog/details/BlogComments";
 import { Separator } from "@/components/ui/separator";
 import { formatDate } from "@/utils/formatDate";
 import { Facebook, Instagram, Link2, Twitter } from "lucide-react";
@@ -114,6 +115,9 @@ export default async function BlogDetailsPage({
             </article>
 
             {/* Comment Section */}
+            <div>
+              <BlogComments blogId={blog._id} />
+            </div>
           </div>
         </main>
 
