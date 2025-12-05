@@ -33,7 +33,7 @@ export default function BlogSidebar() {
       <TagsFilter />
       <Separator />
 
-      <section className="border">
+      <section>
         <h3 className="text-[20px] font-semibold text-gray-900 mb-3">
           Our Gallery
         </h3>
