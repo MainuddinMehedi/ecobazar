@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function NotFound() {
+export default function DashboardRestPage() {
   return (
-    <div className="py-12 flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center">
       <Image
         src={"/assets/404-Illustration.png"}
         alt="Not found"
@@ -15,12 +15,12 @@ export default function NotFound() {
         <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
           Oops! Page not found
         </h1>
-        <p className="text-gray-500 text-lg">
+        <p className="text-gray-500 text-[16px]">
           The page you requested doesn&apos;t exist. Use the sidebar or go back
-          to the homepage.
+          to the dashboard.
         </p>
-        <Link href="/" className="btn-normal">
-          Go Back Home
+        <Link href="/dashboard" className="btn-normal">
+          Go Back to Dashboard
         </Link>
       </div>
     </div>

@@ -16,7 +16,7 @@ import { usePathname } from "next/navigation";
 const items = [
   { title: "Dashboard", href: "/dashboard", icon: LayoutGrid },
   { title: "Order History", href: "/dashboard/orders", icon: ShoppingBag },
-  { title: "Wishlist", href: "/dashboard/wishlist", icon: Heart },
+  { title: "Wishlist", href: "/wishlist", icon: Heart },
   { title: "Shopping Cart", href: "/cart", icon: Handbag },
   { title: "Settings", href: "/dashboard/settings", icon: Settings },
   { title: "Log-out", href: "/logout", icon: LogOut },
@@ -24,7 +24,7 @@ const items = [
 
 interface DashboardNavProps {
   className?: string;
-  onLinkClick?: () => void; // Optional prop to close mobile menu on click
+  onLinkClick?: () => void;
 }
 
 export function DashboardNav({ className, onLinkClick }: DashboardNavProps) {
@@ -39,7 +39,7 @@ export function DashboardNav({ className, onLinkClick }: DashboardNavProps) {
             key={item.href}
             asChild
             variant="ghost"
-            onClick={onLinkClick} // Trigger close event if passed
+            onClick={onLinkClick}
             className={cn(
               "justify-start rounded-none h-10 pl-4 py-6",
               isActive
