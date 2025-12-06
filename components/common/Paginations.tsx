@@ -27,7 +27,7 @@ export default function Paginations({
     const delta = 1;
     const left = currentPage - delta;
     const right = currentPage + delta;
-    const range: (number | string)[] = [];
+    const range: number[] = [];
 
     for (let i = 1; i <= totalPages; i++) {
       if (i === 1 || i === totalPages || (i >= left && i <= right)) {
@@ -36,10 +36,10 @@ export default function Paginations({
     }
 
     const pagesWithDots: (number | string)[] = [];
-    let last: number | string | undefined;
+    let last: number | undefined;
     for (const page of range) {
       if (last !== undefined) {
-        if (page - (last as number) > 1) {
+        if (page - last > 1) {
           pagesWithDots.push("...");
         }
       }
@@ -62,10 +62,10 @@ export default function Paginations({
             }}
             href="#"
             className={cn(
-              "h-10 w-10 rounded-full bg-gray-100 hover:bg-gray-200 border-none text-gray-600 transition-colors",
+              "h-8 w-8 rounded-full bg-gray-100 hover:bg-gray-200 border-none text-gray-600 transition-colors",
               currentPage === 1
                 ? "pointer-events-none opacity-50"
-                : "cursor-pointer",
+                : "cursor-pointer"
             )}
           />
         </PaginationItem>
@@ -83,10 +83,10 @@ export default function Paginations({
                 }}
                 isActive={currentPage === page}
                 className={cn(
-                  "h-10 w-10 rounded-full border-none font-medium",
+                  "h-8 w-8 rounded-full border-none font-medium",
                   currentPage === page
                     ? "bg-success text-white hover:bg-success hover:text-white"
-                    : "text-gray-600 hover:bg-gray-100",
+                    : "text-gray-600 hover:bg-gray-100"
                 )}
               >
                 {page}
@@ -103,10 +103,10 @@ export default function Paginations({
             }}
             href="#"
             className={cn(
-              "h-10 w-10 rounded-full bg-white border border-gray-200 hover:bg-gray-100 text-gray-900 transition-colors",
+              "h-8 w-8 rounded-full bg-white border border-gray-200 hover:bg-gray-100 text-gray-900 transition-colors",
               currentPage === totalPages
                 ? "pointer-events-none opacity-50"
-                : "cursor-pointer",
+                : "cursor-pointer"
             )}
           />
         </PaginationItem>
