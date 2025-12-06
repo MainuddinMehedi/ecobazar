@@ -1,6 +1,8 @@
 "use client";
 
+import { Home } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -9,8 +11,6 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "../ui/breadcrumb";
-import { usePathname } from "next/navigation";
-import { Home } from "lucide-react";
 
 export default function BreadcrumbLinks() {
   const pathname = usePathname();
@@ -35,7 +35,7 @@ export default function BreadcrumbLinks() {
 
   return (
     <div className="relative w-screen left-1/2 -translate-x-1/2">
-      <Breadcrumb className="h-[80px] flex flex-col justify-center w-[89%] mx-auto">
+      <Breadcrumb className="h-20 flex flex-col justify-center w-[89%] mx-auto">
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink asChild>
